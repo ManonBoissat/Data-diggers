@@ -27,7 +27,7 @@ The distribution of the different work occupations of the speakers that are in t
 {% include_relative topic_distribution.html %}
         
 The above barplot shows the distribution over the 20 first topics that were given by our BERTopic model. We see that the relationship between the USA and Russia takes up a lot of space in the New York Times. In second place, we find China and it capital. These two first topics dominate all others by far. It looks like New York Times is fond of ambiguous international relationships... Now look how impressive BERTopic is at clustering the other topics!
-{% include_relative visualize_topic_200.html %}
+{% include_relative visualize_topic_500.html %}
 {% include_relative visualize_hierarchy.html %}
 ## Let's focus now on economics topics: 
 The selection of words related to economics has been done manually.
