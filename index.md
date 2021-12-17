@@ -50,7 +50,7 @@ Gender equality is sadly far from our dataset. The distribution of the different
 
 {% include_relative base__gender_counting.html %}
 
-The distribution of the different work occupations of the speakers that are in the dataset is the following. It is grouped by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. The split is more discrete but some work types stand out: half of the quotes are told by specific jobs which are all related to publishing something to a public. It is not surprising that people who first publish work publicly and already have a sort of relationship with the population are the ones that are the most quoted. 
+The distribution of the different work occupations of the speakers that are in the dataset is the following. It is grouped by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. The split is more discrete but some work types stand out: almost of the quotes are told by specific jobs which are all related to publishing something to a public. It is not surprising that people who first publish work publicly and already have a sort of relationship with the population are the ones that are the most quoted. 
 
 {% include_relative base_occupation_counting.html %}
         
@@ -70,10 +70,14 @@ We could then automatically select economic topics among the BERTopic generated 
  The distribution of the different nationalities of the speakers that are talking about economy is the following. More than the three quarters are american speakers: American people are even more quoted when it concerns economy. The main speakers come from America or Europe. The main ones correlate with the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.       
 {% include_relative in_eco_topic_nationality_counting.html %}
 
-{% include_relative in_eco_topics_gender_counting.html %}
- Gender inequality is very high in this fields !
+        
+Gender inequality is a bit equivalent to when all the quotes were considered.
 
- 
+{% include_relative in_eco_topics_gender_counting.html %}
+
+
+The distribution of the different work occupations of the speakers that are talking about economy is the following. The politician are 2 points more quoted when the economic quotes are considered. Furthermore, as before, more than half of the quotes are told by specific jobs which are all related to publishing something to a public.
+        
 {% include_relative in_eco_topics_occupation_counting.html %}
         
 ### Does it impact Economics ? 
