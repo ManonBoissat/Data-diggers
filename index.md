@@ -42,7 +42,7 @@ div#1::after {
     </style
 </div>
     
-Behind this, we plot the distribution of the speakers that are in our dataset. We found out that almost the three quarters are american speakers. The main speakers come from America, or Europe. The main ones are quite similar to the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.
+Behind this, we plot the distribution of the speakers that are in our dataset. We grouped it by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. We found out that almost the three quarters are american speakers. The main speakers come from America, or Europe. The main ones are quite similar to the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.
 
 {% include_relative base__nationality_counting.html %}
 
