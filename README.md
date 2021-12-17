@@ -1,4 +1,4 @@
-# ADA-website
-Website of "ADA diggers" project
+# Data diggers
+Website of "Data diggers" project
 
-https://manonboissat.github.io/ADA-website/
+https://manonboissat.github.io/Data-diggers/
