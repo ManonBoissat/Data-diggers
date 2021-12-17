@@ -8,7 +8,7 @@
 We will go trough a few question we asked ourselves : 
 - **Who has the most space in the media?**
 - **What subjects are treated the most?**
-- **What are the common features of often-interviewed people**
+- **What are the common features of often-interviewed people?**
 
 ## Methods
 
@@ -73,7 +73,7 @@ On the next
 # Let's focus now on economics topics: 
 The selection of words related to economics has been done manually.
 {% include_relative wordcloud.html %}
-We could then automatically select economic topics among the BERTopic generated ones and finally have XXX quotes characterised as "related to economics".
+We could then automatically select economic topics among the BERTopic generated ones and finally have 3169 quotes characterised as "related to economics".
       
  
  The distribution of the different nationalities of the speakers that are talking about economy is the following. More than the three quarters are american speakers: American people are even more quoted when it concerns economy. The main speakers come from America or Europe. The main ones correlate with the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.       
