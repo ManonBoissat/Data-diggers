@@ -22,12 +22,22 @@ Gender equality is sadly far from our dataset. The distribution of the different
 The distribution of the different work occupations of the speakers that are in the dataset is the following. It is grouped by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. The split is more discrete but some work types stand out: almost of the quotes are told by specific jobs which are all related to publishing something to a public. It is not surprising that people who first publish work publicly and already have a sort of relationship with the population are the ones that are the most quoted. 
 
 {% include_relative base_occupation_counting.html %}
-        
+  
+### Can we find 
+
+{% include_relative pca_explained_var.html %}
+
+
+### Let BERTopic tell us what are the quotes about.
 
 {% include_relative topic_distribution.html %}
         
 The above barplot shows the distribution over the 20 first topics that were given by our BERTopic model. We see that the relationship between the USA and Russia takes up a lot of space in the New York Times. In second place, we find China and it capital. These two first topics dominate all others by far. It looks like New York Times is fond of ambiguous international relationships... Now look how impressive BERTopic is at clustering the other topics!
+
+In the figure below, one can find the interdistance map of the first 500 topics.
 {% include_relative visualize_topic_500.html %}
+
+On the next 
 {% include_relative visualize_hierarchy.html %}
 ## Let's focus now on economics topics: 
 The selection of words related to economics has been done manually.
@@ -53,6 +63,6 @@ The distribution of the different work occupations of the speakers that are talk
 {% include_relative dowjones1.html %}
 
         
-    Our next analysis consists in zooming into the domain of economics and trying to infer common variation between the quotation frequency and the Dow Jones Index which is the oldest price-weighted measurement stock market index in the United States. Feel free to zoom into the plot by selecting a window. It’s obvious that the year 2017 was very rich in economic quotes and it seems related to a massive increase of the Dow Jones. The reasons for this increase are beyond the scope of this study but could be interesting to investigate.
+Our next analysis consists in zooming into the domain of economics and trying to infer common variation between the quotation frequency and the Dow Jones Index which is the oldest price-weighted measurement stock market index in the United States. Feel free to zoom into the plot by selecting a window. It’s obvious that the year 2017 was very rich in economic quotes and it seems related to a massive increase of the Dow Jones. The reasons for this increase are beyond the scope of this study but could be interesting to investigate.
 {% include_relative dowjones_vs_quotes_2015-01-01-2020-04-16_.html %}
     
