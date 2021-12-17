@@ -1,7 +1,5 @@
 <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
-# A hierarchical study of American newspaper: Focus on New York Times
-
-## Introduction
+# Introduction
 
 Newspapers’ role in society is to inform the public of all sorts of topics, give people a voice to publicly show their opinion. When looking at the persons that are quoted in the newspapers, one could ask whether some characteristics like gender or nationality could increase the likelihood to be given a public voice. In parallel, one could want to know which topics are reviewed the most, and see if there are similarities or differences between speakers for all quotes and speakers from a particular topic. 
 
@@ -9,7 +7,7 @@ We will go trough a few question we asked ourselves :
 - Who has the most space in the media? 
 - What subjects are treated the most? 
 
-### Who speaks the most? 
+# Who speaks the most? 
     
 The distribution of the different nationalities of the speakers that are in the dataset is the following. It is grouped by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. Almost the three quarters are american speakers. The main speakers come from America or Europe. The main ones correlate with the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.
 
@@ -23,12 +21,12 @@ The distribution of the different work occupations of the speakers that are in t
 
 {% include_relative base_occupation_counting.html %}
   
-### Can we find 
+# Can we find 
 
 {% include_relative pca_explained_var.html %}
 
 
-### Let BERTopic tell us what are the quotes about.
+# Let BERTopic tell us what are the quotes about.
 
 {% include_relative topic_distribution.html %}
         
@@ -39,7 +37,7 @@ In the figure below, one can find the interdistance map of the first 500 topics.
 
 On the next 
 {% include_relative visualize_hierarchy.html %}
-## Let's focus now on economics topics: 
+# Let's focus now on economics topics: 
 The selection of words related to economics has been done manually.
 {% include_relative wordcloud.html %}
 We could then automatically select economic topics among the BERTopic generated ones and finally have XXX quotes characterised as "related to economics".
@@ -58,7 +56,7 @@ The distribution of the different work occupations of the speakers that are talk
         
 {% include_relative in_eco_topics_occupation_counting.html %}
         
-### Does it impact Economics ? 
+# Does it impact Economics ? 
 
 {% include_relative dowjones1.html %}
 
