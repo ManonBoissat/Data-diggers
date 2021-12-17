@@ -13,7 +13,7 @@ We will go trough a few question we asked ourselves :
 <div markdown="0">
     <div id="1">
     </div>
-<style>
+    <style>
     
 @property --num {
   syntax: "<integer>";
@@ -38,11 +38,25 @@ div#1::after {
   to {
     --num: 100;
   }
-}</style
+}
+    </style
 </div>
     
-Behind this, we found out that a lot of speakers a not americans 
- 
+Behind this, we found out that a lot of speakers a not americans : 
+{% include_relative base__nationality_couting.html %}
+
+        
+{% include_relative base__gender_couting.html %}
+
+
+{% include_relative base__occupation_counting.html %}
+
+## Let's concentrate on economics topics : 
+        
+{% include_relative in_eco_topic__nationality_couting.html %}
+{% include_relative in_eco_topics__gender_couting.html %}
+{% include_relative in_eco_topics__occupation_counting.html %}
+        
 ### Does it impact Economics ? 
 
 {% include_relative dowjones1.html %}
