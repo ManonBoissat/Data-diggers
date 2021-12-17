@@ -50,7 +50,7 @@ Gender equality is still not there.
 {% include_relative base__gender_counting.html %}
 
 
-{% include_relative base__occupation_counting.html %}
+{% include_relative base_occupation_counting.html %}
 
 ## Let's concentrate on economics topics : 
 We've started by manully selecting some words related to economics.
@@ -58,13 +58,13 @@ We've started by manully selecting some words related to economics.
 We could then automatically select economic topics among the BERTopic generated ones and finally have XXX quotes characterised as "related to economics".
       
  
-{% include_relative in_eco_topic__nationality_counting.html %}
+{% include_relative in_eco_topic_nationality_counting.html %}
 
-{% include_relative in_eco_topics__gender_counting.html %}
+{% include_relative in_eco_topics_gender_counting.html %}
  Gender inequality is very high in this fields !
 
  
-{% include_relative in_eco_topics__occupation_counting.html %}
+{% include_relative in_eco_topics_occupation_counting.html %}
         
 ### Does it impact Economics ? 
 
