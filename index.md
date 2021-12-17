@@ -65,10 +65,10 @@ As one can see below, 50 columns are considered a bit more important that the ot
         
 The above barplot shows the distribution over the 20 first topics that were given by our BERTopic model. We see that the relationship between the USA and Russia takes up a lot of space in the New York Times. In second place, we find China and it capital. These two first topics dominate all others by far. It looks like New York Times is fond of ambiguous international relationships... Now look how impressive BERTopic is at clustering the other topics!
 
-In the figure below, one can find the interdistance map of the first 500 topics.
+In the two figures below, one can find the interdistance map of the first 500 topics and a hierarchical clusturing.
 {% include_relative visualize_topic_500.html %}
 
-On the next 
+
 {% include_relative visualize_hierarchy.html %}
 # Let's focus now on economics topics: 
 The selection of words related to economics has been done manually.
@@ -98,3 +98,10 @@ Our next analysis consists in zooming into the domain of economics and trying to
 {% include_relative dowjones_vs_quotes_2015-01-01-2020-04-16_.html %}
     
 # Conclusion
+In this study, we had the chance to work on a brand new dataset freshly coming out of the DLAB at EPFL containing quotes from many English-speaking newspapers. The massive amount of available data led us to the choice of focusing our study on the New York Times only. We were able to make some statistics about the dataset augmented with some wikidata on the authors of the quotes. One of the challenges was to cluster the quotes into topics in an unsupervised manner using BERTopic library and training a model able to label the quotes with precise topics. 
+
+
+We encountered several struggles throughout out study: 
+handling real-world data that doesn’t fit in memory
+PCA, Regression
+
