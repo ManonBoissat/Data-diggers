@@ -44,10 +44,10 @@ div#1::after {
     
 Behind this, we found out that a lot of speakers a not americans : 
 
-{% include_relative base__nationality_couting.html %}
+{% include_relative base__nationality_counting.html %}
 
 Gender equality is still not there.        
-{% include_relative base__gender_couting.html %}
+{% include_relative base__gender_counting.html %}
 
 
 {% include_relative base__occupation_counting.html %}
@@ -58,9 +58,9 @@ We've started by manully selecting some words related to economics.
 We could then automatically select economic topics among the BERTopic generated ones and finally have XXX quotes characterised as "related to economics".
       
  
-{% include_relative in_eco_topic__nationality_couting.html %}
+{% include_relative in_eco_topic__nationality_counting.html %}
 
-{% include_relative in_eco_topics__gender_couting.html %}
+{% include_relative in_eco_topics__gender_counting.html %}
  Gender inequality is very high in this fields !
 
  
