@@ -38,7 +38,15 @@ The distribution of the different work occupations of the speakers that are in t
 
 {% include_relative base_occupation_counting.html %}
   
-# Can we find 
+# Do the specific combination of features of a speaker have a influence on the number of quotation?
+
+A **PCA model** was trained on all the features of the speaker:
+- **date of birth**
+- **nationality** which has been split in onehot vectors
+- **gender** which has been split in onehot vectors
+- **work occupation** which has been split in onehot vectors
+It corresponds to a bit more than 2’000 columns (taking into account all the genders, all the nationalities and all the work occupation as well as the date of birth of the speaker).
+As one can see below, 50 columns are considered a bit more important that the others. It means that only 50 columns could be necessary to represent the number of occurrences of all quotations. However, the highest variance is only around 0.1%. 
 
 {% include_relative pca_explained_var.html %}
 
