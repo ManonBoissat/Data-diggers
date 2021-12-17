@@ -59,12 +59,13 @@ The distribution of the different work occupations of the speakers that are in t
         #### mettre barplot topic
 The above barplot shows the distribution over the 20 first topics that were given by our BERTopic model. We see that the relationship between the USA and Russia takes up a lot of space in the New York Times. In second place, we find China and it capital. These two first topics dominate all others by far. It looks like New York Times is fond of ambiguous international relationships... Now look how impressive BERTopic is at clustering the other topics!
         
-## Let's concentrate on economics topics : 
-We've started by manually selecting some words related to economics.
+## Let's focus now on economics topics: 
+The selection of words related to economics has been done manually.
 {% include_relative wordcloud.html %}
 We could then automatically select economic topics among the BERTopic generated ones and finally have XXX quotes characterised as "related to economics".
       
  
+ The distribution of the different nationalities of the speakers that are talking about economy is the following. More than the three quarters are american speakers: American people are even more quoted when it concerns economy. The main speakers come from America or Europe. The main ones correlate with the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.       
 {% include_relative in_eco_topic_nationality_counting.html %}
 
 {% include_relative in_eco_topics_gender_counting.html %}
