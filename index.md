@@ -51,8 +51,10 @@ Gender equality is sadly far from our dataset. The distribution of the different
 
 
 {% include_relative base_occupation_counting.html %}
+        
 The distribution of the different work occupations of the speakers that are in the dataset is the following. It is grouped by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. The split is more discrete but some work types stand out: half of the quotes are told by specific jobs which are all related to publishing something to a public. It is not surprising that people who first publish work publicly and already have a sort of relationship with the population are the ones that are the most quoted. 
 
+        
         
         #### mettre barplot topic
 The above barplot shows the distribution over the 20 first topics that were given by our BERTopic model. We see that the relationship between the USA and Russia takes up a lot of space in the New York Times. In second place, we find China and it capital. These two first topics dominate all others by far. It looks like New York Times is fond of ambiguous international relationships... Now look how impressive BERTopic is at clustering the other topics!
