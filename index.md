@@ -7,8 +7,8 @@
 In addition, using these classified quotes combined with additional data on the authors characteristics, we would like to compare the features of the authors of a particular citation class and try to find recurrent attributes or relevant features.
 
 We will go trough a few question we asked ourselves : 
-- **Who has the most space in the media? **
-- **What subjects are treated the most? **
+- **Who has the most space in the media?**
+- **What subjects are treated the most?**
 
 ## Methods
 
