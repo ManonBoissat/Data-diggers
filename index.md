@@ -42,15 +42,17 @@ div#1::after {
     </style
 </div>
     
-The distribution of the different speakers that are in our dataset is the following. It is grouped by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. We found out that almost the three quarters are american speakers. The main speakers come from America or Europe. The main ones correlate with the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.
+The distribution of the different nationalities of the speakers that are in the dataset is the following. It is grouped by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. Almost the three quarters are american speakers. The main speakers come from America or Europe. The main ones correlate with the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.
 
 {% include_relative base__nationality_counting.html %}
 
-Gender equality is sadly far from our dataset. The distribution of the different genders is the following. For the rest of the analysis, we will gather the genders other than male and female in a "other" category as there are a really few of them.
+Gender equality is sadly far from our dataset. The distribution of the different genders of the speakers is the following. For the rest of the analysis, genders other than male and female will be gathered in a "other" category as there are a really few of them.
 {% include_relative base__gender_counting.html %}
 
 
 {% include_relative base_occupation_counting.html %}
+The distribution of the different work occupations of the speakers that are in the dataset is the following. It is grouped by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. The split is more discrete but some work types stand out: half of the quotes are told by specific jobs which are all related to publishing something to a public. It is not surprising that people who first publish work publicly and already have a sort of relationship with the population are the ones that are the most quoted. 
+
         
         #### mettre barplot topic
 The above barplot shows the distribution over the 20 first topics that were given by our BERTopic model. We see that the relationship between the USA and Russia takes up a lot of space in the New York Times. In second place, we find China and it capital. These two first topics dominate all others by far. It looks like New York Times is fond of ambiguous international relationships... Now look how impressive BERTopic is at clustering the other topics!
