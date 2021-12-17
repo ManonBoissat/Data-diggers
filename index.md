@@ -9,7 +9,7 @@ We will go trough a few question we asked ourselves :
 - Who has the most space in the media? 
 - What subjects are treated the most? 
 
-### Who speaks the most ? 
+### Who speaks the most? 
 <div markdown="0">
     <div id="1">
     </div>
@@ -42,7 +42,7 @@ div#1::after {
     </style
 </div>
     
-Behind this, we found out that a lot of speakers a not americans : 
+Behind this, we plot the distribution of the speakers that are in our dataset. We found out that almost the three quarters are american speakers. The main speakers come from America, or Europe. The main ones are quite similar to the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.
 
 {% include_relative base__nationality_counting.html %}
 
@@ -56,7 +56,7 @@ Gender equality is still not there.
 The above barplot shows the distribution over the 20 first topics that were given by our BERTopic model. We see that the relationship between the USA and Russia takes up a lot of space in the New York Times. In second place, we find China and it capital. These two first topics dominate all others by far. It looks like New York Times is fond of ambiguous international relationships... Now look how impressive BERTopic is at clustering the other topics!
         
 ## Let's concentrate on economics topics : 
-We've started by manully selecting some words related to economics.
+We've started by manually selecting some words related to economics.
 {% include_relative wordcloud.html %}
 We could then automatically select economic topics among the BERTopic generated ones and finally have XXX quotes characterised as "related to economics".
       
