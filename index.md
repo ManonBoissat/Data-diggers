@@ -51,7 +51,10 @@ Gender equality is still not there.
 
 
 {% include_relative base_occupation_counting.html %}
-
+        
+        #### mettre barplot topic
+The above barplot shows the distribution over the 20 first topics that were given by our BERTopic model. We see that the relationship between the USA and Russia takes up a lot of space in the New York Times. In second place, we find China and it capital. These two first topics dominate all others by far. It looks like New York Times is fond of ambiguous international relationships... Now look how impressive BERTopic is at clustering the other topics!
+        
 ## Let's concentrate on economics topics : 
 We've started by manully selecting some words related to economics.
 {% include_relative wordcloud.html %}
@@ -70,8 +73,6 @@ We could then automatically select economic topics among the BERTopic generated 
 
 {% include_relative dowjones1.html %}
 
-        #### mettre barplot topic
-The above barplot shows the distribution over the 20 first topics that were given by our BERTopic model. We see that the relationship between the USA and Russia takes up a lot of space in the New York Times. In second place, we find China and it capital. These two first topics dominate all others by far. It looks like New York Times is fond of ambiguous international relationships... Now look how impressive BERTopic is at clustering the other topics!
         
     Our next analysis consists in zooming into the domain of economics and trying to infer common variation between the quotation frequency and the Dow Jones Index which is the oldest price-weighted measurement stock market index in the United States. Feel free to zoom into the plot by selecting a window. It’s obvious that the year 2017 was very rich in economic quotes and it seems related to a massive increase of the Dow Jones. The reasons for this increase are beyond the scope of this study but could be interesting to investigate.
 {% include_relative dowjones_vs_quotes_2015-01-01-2020-04-16_.html %}
