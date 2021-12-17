@@ -45,7 +45,9 @@ A **PCA model** was trained on all the features of the speaker composed of:
 - **nationality** which has been split in onehot vectors
 - **gender** which has been split in onehot vectors
 - **work occupation** which has been split in onehot vectors
-It corresponds to a bit more than 2’000 columns (taking into account all the genders, all the nationalities and all the work occupation as well as the date of birth of the speaker).
+
+It corresponds to a bit more than 2’000 columns (taking into account all the genders, all the nationalities and all the work occupation as well as the date of birth of the speaker). We didn't set any number of components as we wanted to study the global influence of the columns on the number of occurrences.
+
 As one can see below, 50 columns are considered a bit more important that the others. It means that only 50 columns could be necessary to represent the number of occurrences of all quotations. However, the highest variance is only around 1%. 
 
 {% include_relative pca_explained_var.html %}
