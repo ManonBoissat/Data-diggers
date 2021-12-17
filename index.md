@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Newspapers’ role in society is to inform the public of all sorts of topics, give people a voice to publicly show their opinion. When looking at the people that are quoted in the newspapers, one could ask whether some characteristics like gender or nationality could increase the likelihood to be given a public voice. In parallel, one could  want to know which topics are reviewed the most, and see if there are similarities or differences between speakers for all quotes and speakers from a particular topic. 
+Newspapers’ role in society is to inform the public of all sorts of topics, give people a voice to publicly show their opinion. When looking at the persons that are quoted in the newspapers, one could ask whether some characteristics like gender or nationality could increase the likelihood to be given a public voice. In parallel, one could want to know which topics are reviewed the most, and see if there are similarities or differences between speakers for all quotes and speakers from a particular topic. 
 
 We will go trough a few question we asked ourselves : 
 - Who has the most space in the media? 
@@ -42,11 +42,11 @@ div#1::after {
     </style
 </div>
     
-Behind this, we plot the distribution of the speakers that are in our dataset. We grouped it by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. We found out that almost the three quarters are american speakers. The main speakers come from America, or Europe. The main ones are quite similar to the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.
+The distribution of the different speakers that are in our dataset is the following. It is grouped by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. We found out that almost the three quarters are american speakers. The main speakers come from America or Europe. The main ones correlate with the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.
 
 {% include_relative base__nationality_counting.html %}
 
-Gender equality is still not there.        
+Gender equality is sadly far from our dataset. The distribution of the different genders is the following. For the rest of the analysis, we will gather the genders other than male and female in a "other" category as there are a really few of them.
 {% include_relative base__gender_counting.html %}
 
 
