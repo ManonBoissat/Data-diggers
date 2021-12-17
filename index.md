@@ -40,7 +40,7 @@ The distribution of the different work occupations of the speakers that are in t
   
 # Do the specific combination of features of a speaker have a influence on the number of quotation?
 
-A **PCA model** was trained on all the features of the speaker:
+A **PCA model** was trained on all the features of the speaker composed of:
 - **date of birth**
 - **nationality** which has been split in onehot vectors
 - **gender** which has been split in onehot vectors
