@@ -10,37 +10,6 @@ We will go trough a few question we asked ourselves :
 - What subjects are treated the most? 
 
 ### Who speaks the most? 
-<div markdown="0">
-    <div id="1">
-    </div>
-    <style>
-    
-@property --num {
-  syntax: "<integer>";
-  initial-value: 0;
-  inherits: false;
-}
-
-div#1 {
-  animation: counter 5s infinite alternate ease-in-out;
-  counter-reset: num var(--num);
-  font: 800 40px system-ui;
-  padding: 2rem;
-}
-div#1::after {
-  content: counter(num)+"%";
-}
-
-@keyframes counter {
-  from {
-    --num: 0;
-  }
-  to {
-    --num: 100;
-  }
-}
-    </style
-</div>
     
 The distribution of the different nationalities of the speakers that are in the dataset is the following. It is grouped by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. Almost the three quarters are american speakers. The main speakers come from America or Europe. The main ones correlate with the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.
 
@@ -55,12 +24,11 @@ The distribution of the different work occupations of the speakers that are in t
 {% include_relative base_occupation_counting.html %}
         
 
-
+{% include_relative topic_distribution.html %}
         
-        
-        #### mettre barplot topic
 The above barplot shows the distribution over the 20 first topics that were given by our BERTopic model. We see that the relationship between the USA and Russia takes up a lot of space in the New York Times. In second place, we find China and it capital. These two first topics dominate all others by far. It looks like New York Times is fond of ambiguous international relationships... Now look how impressive BERTopic is at clustering the other topics!
-        
+{% include_relative visualize_topic_200.html %}
+{% include_relative visualize_hierarchy.html %}
 ## Let's focus now on economics topics: 
 The selection of words related to economics has been done manually.
 {% include_relative wordcloud.html %}
