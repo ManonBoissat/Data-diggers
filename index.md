@@ -1,11 +1,28 @@
 <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
 # Introduction
 
-Newspapers’ role in society is to inform the public of all sorts of topics, give people a voice to publicly show their opinion. When looking at the persons that are quoted in the newspapers, one could ask whether some characteristics like gender or nationality could increase the likelihood to be given a public voice. In parallel, one could want to know which topics are reviewed the most, and see if there are similarities or differences between speakers for all quotes and speakers from a particular topic. 
+##Abstract
+
+**American newspapers** cover all kinds of topics from politics to sports, business, environment, etc... At the highest level, one could ask which topics people are mostly interviewed about. One way to answer this question is by trying to infer the theme each Quotebank citation is treating in an unsupervised manner and draw a distribution over some labels/classes representing these themes. Once all citations are classified with a certain confidence probability, a lower-level question could be: for each class, is it possible to relate the quotes’ frequency with some real world event? For instance, could an increase of citations about economics forecast some variation in the American stock market? 
+In addition, using these classified quotes combined with additional data on the authors characteristics, we would like to compare the features of the authors of a particular citation class and try to find recurrent attributes or relevant features.
 
 We will go trough a few question we asked ourselves : 
-- Who has the most space in the media? 
-- What subjects are treated the most? 
+- **Who has the most space in the media? **
+- **What subjects are treated the most? **
+
+##Methods
+
+In our data story, we chose to take only New York Times quotes because it represents the American newspapers well, and is a reasonable sample of our data. 
+We will consider three main aspects:
+- the **number of occurrences** of the quotes
+- the **features** of the speakers
+- the **economic topics** of the quotes
+
+To analyse those aspects, we will use several techniques:
+- **PCA** to understand the link between the features of the speaker and the number of occurrences of his·her quotes
+- **BERT topic** analysis to get the economic topics
+- **Doe Jones** to report the frequency of citations and compare this frequency with real world event’s timeline, as for the Dow Jones index.
+
 
 # Who speaks the most? 
     
