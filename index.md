@@ -25,14 +25,20 @@ To analyse those aspects, we will use several techniques:
 
 
 # Who speaks the most? 
+
+## Nationality
     
-The distribution of the different nationalities of the speakers that are in the dataset is the following. It is grouped by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. Almost the three quarters are american speakers. The main speakers come from America or Europe. The main ones correlate with the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.
+The distribution of the different **nationalities** of the speakers that are in the dataset is the following. It is grouped by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. Almost the three quarters are american speakers. The main speakers come from America or Europe. The main ones correlate with the countries that have been awarded the price of "soft power" influence. As it can be seen in [wikipedia webpage](https://en.wikipedia.org/wiki/Soft_power), the last three different winners were: the USA, France and United Kingdom.
 
 {% include_relative base__nationality_counting.html %}
+
+## Gender
 
 Gender equality is sadly far from our dataset. The distribution of the different genders of the speakers is the following. For the rest of the analysis, genders other than male and female will be gathered in a "other" category as there are a really few of them.
 
 {% include_relative base__gender_counting.html %}
+
+## Occupation
 
 The distribution of the different work occupations of the speakers that are in the dataset is the following. It is grouped by the num of occurrences of the quotation, that is to say we counted a speaker X times if the quotation he·she is involved in appears X times. The split is more discrete but some work types stand out: almost of the quotes are told by specific jobs which are all related to publishing something to a public. It is not surprising that people who first publish work publicly and already have a sort of relationship with the population are the ones that are the most quoted. 
 
